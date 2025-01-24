@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.sunnzaraa.ui.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_profileScreenFragment"
+            app:destination="@id/profileScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_libraryScreenFragment"
+            app:destination="@id/libraryScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_premiumScreenFragment"
+            app:destination="@id/premiumScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_searchScreenFragment"
+            app:destination="@id/searchScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileScreenFragment"
+        android:name="com.example.sunnzaraa.ui.ProfileScreenFragment"
+        android:label="fragment_profile_screen"
+        tools:layout="@layout/fragment_profile_screen" />
+    <fragment
+        android:id="@+id/libraryScreenFragment"
+        android:name="com.example.sunnzaraa.ui.LibraryScreenFragment"
+        android:label="fragment_library_screen"
+        tools:layout="@layout/fragment_library_screen" />
+    <fragment
+        android:id="@+id/searchScreenFragment"
+        android:name="com.example.sunnzaraa.ui.SearchScreenFragment"
+        android:label="fragment_search_screen"
+        tools:layout="@layout/fragment_search_screen" />
+    <fragment
+        android:id="@+id/premiumScreenFragment"
+        android:name="com.example.sunnzaraa.ui.PremiumScreenFragment"
+        android:label="fragment_premium_screen"
+        tools:layout="@layout/fragment_premium_screen" />
+</navigation>

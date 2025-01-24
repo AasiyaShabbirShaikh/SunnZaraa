@@ -2,4 +2,18 @@
     <string name="app_name">SunnZaraa</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    main_activity-->
+
+    <!--    home_screen_fragment-->
+
+    <!--    profile_screen_fragment-->
+
+    <!--    library_screen_fragment-->
+
+    <!--    search_screen_fragment-->
+
+    <!--    premium_screen_fragment-->
+
+
 </resources>
