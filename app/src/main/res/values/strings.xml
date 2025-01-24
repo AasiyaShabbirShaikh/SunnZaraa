@@ -5,6 +5,15 @@
 
     <!--    main_activity-->
 
+    <!--    drawer_menu-->
+    <string name="music_languages">Music Languages</string>
+    <string name="display_theme">Display Theme</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="notififcations">Notifications</string>
+    <string name="terms_privacy">Terms and Privacy</string>
+    <string name="help_and_faq">Help and FAQ</string>
+    <string name="log_out">Log Out</string>
+
     <!--    home_screen_fragment-->
 
     <!--    profile_screen_fragment-->
