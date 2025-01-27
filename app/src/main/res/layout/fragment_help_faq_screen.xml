@@ -1,288 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:orientation="vertical"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp"
     tools:context=".ui.HelpFaqScreenFragment">
 
-    <TextView
-        android:id="@+id/Help_and_faq_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/help_and_faq"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        />
-
     <LinearLayout
-        android:id="@+id/question_1_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="30dp"
         >
 
         <TextView
-            android:id="@+id/ques_1_text"
-            android:layout_width="0dp"
+            android:id="@+id/Help_and_faq_text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/what_is_sunnzaraa"
-            android:textSize="16sp"
+            android:text="@string/help_and_faq"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
             />
 
-        <ImageView
-            android:id="@+id/que_1_arrow"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:id="@+id/question_1_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_1_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/what_is_sunnzaraa"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_1_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_sunnzaraa_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_2_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_search"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_2_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_2_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_search_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_3_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_3_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_add_favourites"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_3_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_3_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_add_favourites_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_4_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_4_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_create_playlist"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_4_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_4_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_create_playlist_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_5_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_5_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/will_i_lose_data_on_uninstallation"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_5_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_5_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/will_i_lose_data_on_uninstallation_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_6_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_6_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/why_cant_play_songs"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_6_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_6_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/why_cant_play_songs_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/question_7_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:id="@+id/ques_7_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_report_bug_query"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                />
+
+            <ImageView
+                android:id="@+id/que_7_arrow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_drop_down_arrow_icon"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ans_7_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_report_bug_query_answer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            android:visibility="gone"
             />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/ans_1_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/what_is_sunnzaraa_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_2_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_2_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_search"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_2_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_2_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/how_to_search_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_3_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_3_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_add_favourites"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_3_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_3_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/how_to_add_favourites_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_4_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_4_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_create_playlist"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_4_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_4_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/how_to_create_playlist_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_5_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_5_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/will_i_lose_data_on_uninstallation"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_5_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_5_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/will_i_lose_data_on_uninstallation_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_6_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_6_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/why_cant_play_songs"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_6_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_6_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/why_cant_play_songs_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-    <LinearLayout
-        android:id="@+id/question_7_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        >
-
-        <TextView
-            android:id="@+id/ques_7_text"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_report_bug_query"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_weight="4"
-            />
-
-        <ImageView
-            android:id="@+id/que_7_arrow"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_drop_down_arrow_icon"
-            android:layout_weight="1"
-            />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/ans_7_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/how_to_report_bug_query_answer"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"
-        android:visibility="gone"
-        />
-
-</LinearLayout>
+</ScrollView>

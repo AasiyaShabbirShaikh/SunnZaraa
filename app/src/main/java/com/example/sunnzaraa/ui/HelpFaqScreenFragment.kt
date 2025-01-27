@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.isVisible
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentHelpFaqScreenBinding
@@ -20,9 +21,9 @@ class HelpFaqScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHelpFaqScreenBinding.inflate(inflater, container, false)
-        return binding.root
 
         setArrowClick()
+        return binding.root
     }
 
     private fun setArrowClick(){

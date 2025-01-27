@@ -70,7 +70,7 @@
     <string name="will_i_lose_data_on_uninstallation"><font color="#FFFFFFFF">Will my data be lost if I uninstall the app?</font></string>
     <string name="will_i_lose_data_on_uninstallation_answer"><font color="#FFFFFFFF">es, since data is stored locally, uninstalling the app will delete all your playlists and saved preferences.</font></string>
     <string name="why_cant_play_songs"><font color="#FFFFFFFF">Why can’t I play certain songs?</font></string>
-    <string name="why_cant_play_songs_answer"><font color="#FFFFFFFF">Some songs may not be available due to licensing restrictions. We're always working to expand our library.</font></string>
+    <string name="why_cant_play_songs_answer"><font color="#FFFFFFFF">Some songs may not be available due to licensing restrictions. We are always working to expand our library.</font></string>
     <string name="how_to_report_bug_query"><font color="#FFFFFFFF">How do I report a bug or provide feedback?</font></string>
     <string name="how_to_report_bug_query_answer"><font color="#FFFFFFFF">Please refer to the email provided in the Terms and Policy section and feel free to mail us. We’re here to assist you!</font></string>
 
