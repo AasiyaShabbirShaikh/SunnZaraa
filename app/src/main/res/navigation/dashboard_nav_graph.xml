@@ -34,6 +34,12 @@
         <action
             android:id="@+id/action_homeScreenFragment_to_helpFaqScreenFragment"
             app:destination="@id/helpFaqScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_editProfileScreenFragment"
+            app:destination="@id/editProfileScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_favouritesScreenFragment"
+            app:destination="@id/favouritesScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileScreenFragment"
@@ -75,4 +81,14 @@
         android:name="com.example.sunnzaraa.ui.HelpFaqScreenFragment"
         android:label="fragment_help_faq_screen"
         tools:layout="@layout/fragment_help_faq_screen" />
+    <fragment
+        android:id="@+id/editProfileScreenFragment"
+        android:name="com.example.sunnzaraa.ui.EditProfileScreenFragment"
+        android:label="fragment_edit_profile_screen"
+        tools:layout="@layout/fragment_edit_profile_screen" />
+    <fragment
+        android:id="@+id/favouritesScreenFragment"
+        android:name="com.example.sunnzaraa.ui.FavouritesScreenFragment"
+        android:label="fragment_favourites_screen"
+        tools:layout="@layout/fragment_favourites_screen" />
 </navigation>

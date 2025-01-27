@@ -14,8 +14,8 @@
 
     <item
         android:id="@+id/account_settings"
-        android:icon="@drawable/ic_account_settings_icon"
-        android:title="@string/account_settings" />
+        android:icon="@drawable/ic_settings_icon"
+        android:title="@string/settings" />
 
     <item
         android:id="@+id/notifications"

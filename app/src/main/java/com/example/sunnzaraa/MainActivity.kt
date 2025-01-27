@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.account_settings -> {
                     binding.mainDrawer.closeDrawer(GravityCompat.START)
-                    navController.navigate(R.id.accountSettingsScreenFragment)
+                    navController.navigate(R.id.settingsScreenFragment)
                 }
 
                 R.id.terms_privacy -> {

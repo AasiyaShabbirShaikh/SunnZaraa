@@ -9,7 +9,7 @@
     <!--    drawer_menu-->
     <string name="music_languages"><font color="#FFFFFFFF">Music Languages</font></string>
     <string name="display_theme"><font color="#FFFFFFFF">Display Theme</font></string>
-    <string name="account_settings"><font color="#FFFFFFFF">Account Settings</font></string>
+    <string name="settings"><font color="#FFFFFFFF">Settings</font></string>
     <string name="notififcations"><font color="#FFFFFFFF">Notifications</font></string>
     <string name="terms_privacy"><font color="#FFFFFFFF">Terms and Privacy</font></string>
     <string name="help_and_faq"><font color="#FFFFFFFF">Help and FAQ</font></string>
@@ -87,5 +87,11 @@
     <string name="why_cant_play_songs_answer"><font color="#FFFFFFFF">Some songs may not be available due to licensing restrictions. We are always working to expand our library.</font></string>
     <string name="how_to_report_bug_query"><font color="#FFFFFFFF">How do I report a bug or provide feedback?</font></string>
     <string name="how_to_report_bug_query_answer"><font color="#FFFFFFFF">Please refer to the email provided in the Terms and Policy section and feel free to mail us. We’re here to assist you!</font></string>
+
+    <!--    edit_profile_screen_fragment-->
+    <string name="edit_profile"><font color="#FFFFFFFF">Edit Profile</font></string>
+    <string name="change_profile_photo"><font color="#FFFFFFFF"><u>Change Profile Photo</u></font></string>
+    <string name="username"><font color="#FFFFFFFF">Username</font></string>
+    <string name="password"><font color="#FFFFFFFF">Password</font></string>
 
 </resources>
