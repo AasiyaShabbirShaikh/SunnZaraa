@@ -22,6 +22,18 @@
         <action
             android:id="@+id/action_homeScreenFragment_to_searchScreenFragment"
             app:destination="@id/searchScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_musicLanguagesScreenFragment"
+            app:destination="@id/musicLanguagesScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_accountSettingsScreenFragment"
+            app:destination="@id/accountSettingsScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_termsPrivacyScreenFragment"
+            app:destination="@id/termsPrivacyScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_helpFaqScreenFragment"
+            app:destination="@id/helpFaqScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileScreenFragment"
@@ -43,4 +55,24 @@
         android:name="com.example.sunnzaraa.ui.PremiumScreenFragment"
         android:label="fragment_premium_screen"
         tools:layout="@layout/fragment_premium_screen" />
+    <fragment
+        android:id="@+id/musicLanguagesScreenFragment"
+        android:name="com.example.sunnzaraa.ui.MusicLanguagesScreenFragment"
+        android:label="fragment_music_languages_screen"
+        tools:layout="@layout/fragment_music_languages_screen" />
+    <fragment
+        android:id="@+id/accountSettingsScreenFragment"
+        android:name="com.example.sunnzaraa.ui.AccountSettingsScreenFragment"
+        android:label="fragment_account_settings_screen"
+        tools:layout="@layout/fragment_account_settings_screen" />
+    <fragment
+        android:id="@+id/termsPrivacyScreenFragment"
+        android:name="com.example.sunnzaraa.ui.TermsPrivacyScreenFragment"
+        android:label="fragment_terms_privacy_screen"
+        tools:layout="@layout/fragment_terms_privacy_screen" />
+    <fragment
+        android:id="@+id/helpFaqScreenFragment"
+        android:name="com.example.sunnzaraa.ui.HelpFaqScreenFragment"
+        android:label="fragment_help_faq_screen"
+        tools:layout="@layout/fragment_help_faq_screen" />
 </navigation>

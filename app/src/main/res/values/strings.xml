@@ -2,17 +2,18 @@
     <string name="app_name">SunnZaraa</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <!--    main_activity-->
+    <string name="start">start</string>
+    <string name="close">close</string>
 
     <!--    drawer_menu-->
-    <string name="music_languages">Music Languages</string>
-    <string name="display_theme">Display Theme</string>
-    <string name="account_settings">Account Settings</string>
-    <string name="notififcations">Notifications</string>
-    <string name="terms_privacy">Terms and Privacy</string>
-    <string name="help_and_faq">Help and FAQ</string>
-    <string name="log_out">Log Out</string>
+    <string name="music_languages"><font color="#FFFFFFFF">Music Languages</font></string>
+    <string name="display_theme"><font color="#FFFFFFFF">Display Theme</font></string>
+    <string name="account_settings"><font color="#FFFFFFFF">Account Settings</font></string>
+    <string name="notififcations"><font color="#FFFFFFFF">Notifications</font></string>
+    <string name="terms_privacy"><font color="#FFFFFFFF">Terms and Privacy</font></string>
+    <string name="help_and_faq"><font color="#FFFFFFFF">Help and FAQ</font></string>
+    <string name="log_out"><font color="#FFFFFFFF">Log Out</font></string>
 
     <!--    home_screen_fragment-->
 
@@ -24,5 +25,53 @@
 
     <!--    premium_screen_fragment-->
 
+    <!--    terms_and_privacy_fragment-->
+    <string name="terms_privacy_welcome_note"><font color="#FFFFFFFF">Welcome to SunnZaraa Music App ! By using our app, you agree to the following terms and conditions. Please read them carefully.</font></string>
+    <string name="acceptance_of_terms"><font color="#FFFFFFFF">1. Acceptance of Terms</font></string>
+    <string name="acceptance_of_terms_content"><font color="#FFFFFFFF">By accessing or using SunnZaraa Music App, you agree to comply with and be bound by these Terms and Policies. If you do not agree, please do not use the app.</font></string>
+    <string name="use_of_app"><font color="#FFFFFFFF">2. Use of the App</font></string>
+    <string name="use_of_app_content_1"><font color="#FFFFFFFF">- You must be at least 14 years old to use this app.</font></string>
+    <string name="use_of_app_content_2"><font color="#FFFFFFFF">- The app is for personal, non-commercial use only.</font></string>
+    <string name="use_of_app_content_3"><font color="#FFFFFFFF">- Do not engage in any activity that may harm the app, its users, or its content.</font></string>
+    <string name="account_information"><font color="#FFFFFFFF">3. Account Information</font></string>
+    <string name="account_information_content_1"><font color="#FFFFFFFF">- You are responsible for maintaining the confidentiality of your account credentials.</font></string>
+    <string name="account_information_content_2"><font color="#FFFFFFFF">- Ensure the information you provide is accurate and up-to-date.</font></string>
+    <string name="content_and_copyright"><font color="#FFFFFFFF">4. Content and Copyright</font></string>
+    <string name="content_and_copyright_content_1"><font color="#FFFFFFFF">- All music, graphics, and content in the app are the property of SunnZaraa Music App or their respective owners.</font></string>
+    <string name="content_and_copyright_content_2"><font color="#FFFFFFFF">- Do not copy, distribute, or modify the app’s content without prior permission.</font></string>
+    <string name="privacy_policy"><font color="#FFFFFFFF">5. Privacy Policy</font></string>
+    <string name="privacy_policy_content_1"><font color="#FFFFFFFF">- We respect your privacy and are committed to protecting your data. Any personal information you provide will be handled in accordance with our Privacy Policy.</font></string>
+    <string name="privacy_policy_content_2"><font color="#FFFFFFFF">- The app may collect data such as usage patterns and preferences to enhance user experience.</font></string>
+    <string name="subscriptions_and_payments"><font color="#FFFFFFFF">6. Subscriptions and Payments</font></string>
+    <string name="subscriptions_and_payments_content_1"><font color="#FFFFFFFF">- If the app offers premium features, they are available on a subscription basis. Ensure timely payment to avoid interruptions.</font></string>
+    <string name="subscriptions_and_payments_content_2"><font color="#FFFFFFFF">- Subscription details and pricing are clearly outlined within the app.</font></string>
+    <string name="third_party_links"><font color="#FFFFFFFF">7. Third Party Links</font></string>
+    <string name="third_party_links_content"><font color="#FFFFFFFF">The app may include links to third-party websites or services. We are not responsible for their content, privacy policies, or practices.</font></string>
+    <string name="termination_of_use"><font color="#FFFFFFFF">8. Termination of Use</font></string>
+    <string name="termination_of_use_content"><font color="#FFFFFFFF">We reserve the right to suspend or terminate your access to the app if you violate these terms.</font></string>
+    <string name="limitation_of_liability"><font color="#FFFFFFFF">9. Limitation of Liability</font></string>
+    <string name="limitation_of_liability_content_1"><font color="#FFFFFFFF">We are not responsible for:</font></string>
+    <string name="limitation_of_liability_content_2"><font color="#FFFFFFFF">- Any interruptions or errors in the app.</font></string>
+    <string name="limitation_of_liability_content_3"><font color="#FFFFFFFF">- Loss of data or damage caused by using the app.</font></string>
+    <string name="changes_to_terms"><font color="#FFFFFFFF">10. Changes to Terms</font></string>
+    <string name="changes_to_terms_content"><font color="#FFFFFFFF">We may update these Terms and Policies from time to time. Continued use of the app indicates acceptance of the updated terms.</font></string>
+    <string name="support_mail_note"><font color="#FFFFFFFF">For any questions or concerns, please contact us at <font color=""><u>sunnzaraa@gmail.com</u></font>.</font></string>
+    <string name="thankyou_note"><font color="#FFFFFFFF">Thank you for choosing SunnZaraa!</font></string>
+
+    <!--    help_and_faq_fragment-->
+    <string name="what_is_sunnzaraa"><font color="#FFFFFFFF">What is SunnZaraa?</font></string>
+    <string name="what_is_sunnzaraa_answer"><font color="#FFFFFFFF">SunnZaraa is a music app that allows you to stream, download, and enjoy your favorite tracks anytime, anywhere.</font></string>
+    <string name="how_to_search"><font color="#FFFFFFFF">How do I search for a song or artist?</font></string>
+    <string name="how_to_search_answer"><font color="#FFFFFFFF">Use the search icon at the bottom of the app. Type in the name of the song, album, or artist.</font></string>
+    <string name="how_to_add_favourites"><font color="#FFFFFFFF">How do I add songs to my favorites?</font></string>
+    <string name="how_to_add_favourites_answer"><font color="#FFFFFFFF">Tap the heart icon next to a song to add it to your favorites. You can access your favorite songs in the "Favorites" section.</font></string>
+    <string name="how_to_create_playlist"><font color="#FFFFFFFF">How do I create a playlist?</font></string>
+    <string name="how_to_create_playlist_answer"><font color="#FFFFFFFF">Navigate to the "Library" section, tap "Create Playlist," name your playlist, and start adding songs by tapping the "+" button next to your favorite tracks.</font></string>
+    <string name="will_i_lose_data_on_uninstallation"><font color="#FFFFFFFF">Will my data be lost if I uninstall the app?</font></string>
+    <string name="will_i_lose_data_on_uninstallation_answer"><font color="#FFFFFFFF">es, since data is stored locally, uninstalling the app will delete all your playlists and saved preferences.</font></string>
+    <string name="why_cant_play_songs"><font color="#FFFFFFFF">Why can’t I play certain songs?</font></string>
+    <string name="why_cant_play_songs_answer"><font color="#FFFFFFFF">Some songs may not be available due to licensing restrictions. We're always working to expand our library.</font></string>
+    <string name="how_to_report_bug_query"><font color="#FFFFFFFF">How do I report a bug or provide feedback?</font></string>
+    <string name="how_to_report_bug_query_answer"><font color="#FFFFFFFF">Please refer to the email provided in the Terms and Policy section and feel free to mail us. We’re here to assist you!</font></string>
 
 </resources>
