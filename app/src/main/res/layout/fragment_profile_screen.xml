@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
         >
 
         <TextView
@@ -185,7 +186,7 @@
             android:text="@string/content"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:paddingStart="16dp"
@@ -278,7 +279,7 @@
             android:text="@string/actions"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:paddingStart="16dp"

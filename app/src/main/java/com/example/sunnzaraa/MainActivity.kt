@@ -1,6 +1,7 @@
 package com.example.sunnzaraa
 
 import android.os.Bundle
+import android.view.View
 import androidx.annotation.GravityInt
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         setUpDrawerLayoutMenu()
         setUpHomeBottomBar()
+        setUpToolBarBottomBarVisibility()
     }
 
     private fun setUpHomeBottomBar(){
@@ -89,4 +91,48 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun setUpToolBarBottomBarVisibility(){
+        navController.addOnDestinationChangedListener{ _,destination, _ ->
+            if(destination.id == R.id.termsPrivacyScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if (destination.id == R.id.helpFaqScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if (destination.id == R.id.profileScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if (destination.id == R.id.editProfileScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else{
+                showMainBottomBar()
+                showMainToolbar()
+            }
+        }
+
+    }
+
+    private fun hideMainBottomBar(){
+        binding.bottomBarLayout.visibility = View.GONE
+    }
+
+    private fun showMainBottomBar(){
+        binding.bottomBarLayout.visibility = View.VISIBLE
+    }
+
+    private fun hideMainToolbar(){
+        binding.homeToolbarLayout.visibility = View.GONE
+    }
+
+    private fun showMainToolbar(){
+        binding.homeToolbarLayout.visibility = View.VISIBLE
+    }
+
+
 }
