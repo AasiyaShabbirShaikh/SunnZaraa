@@ -26,8 +26,8 @@
             android:id="@+id/action_homeScreenFragment_to_musicLanguagesScreenFragment"
             app:destination="@id/musicLanguagesScreenFragment" />
         <action
-            android:id="@+id/action_homeScreenFragment_to_accountSettingsScreenFragment"
-            app:destination="@id/accountSettingsScreenFragment" />
+            android:id="@+id/action_homeScreenFragment_to_settingsScreenFragment"
+            app:destination="@id/settingsScreenFragment" />
         <action
             android:id="@+id/action_homeScreenFragment_to_termsPrivacyScreenFragment"
             app:destination="@id/termsPrivacyScreenFragment" />
@@ -61,10 +61,10 @@
         android:label="fragment_music_languages_screen"
         tools:layout="@layout/fragment_music_languages_screen" />
     <fragment
-        android:id="@+id/accountSettingsScreenFragment"
-        android:name="com.example.sunnzaraa.ui.AccountSettingsScreenFragment"
-        android:label="fragment_account_settings_screen"
-        tools:layout="@layout/fragment_account_settings_screen" />
+        android:id="@+id/settingsScreenFragment"
+        android:name="com.example.sunnzaraa.ui.SettingsScreenFragment"
+        android:label="fragment_settings_screen"
+        tools:layout="@layout/fragment_settings_screen" />
     <fragment
         android:id="@+id/termsPrivacyScreenFragment"
         android:name="com.example.sunnzaraa.ui.TermsPrivacyScreenFragment"

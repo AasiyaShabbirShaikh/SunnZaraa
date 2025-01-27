@@ -18,6 +18,20 @@
     <!--    home_screen_fragment-->
 
     <!--    profile_screen_fragment-->
+    <string name="profile"><font color="#FFFFFFFF">Profile</font></string>
+    <string name="name_here"><font color="#FFFFFFFF">Name here</font></string>
+    <string name="edit"><font color="#FFFFFFFF"><u>Edit</u></font></string>
+    <string name="personal_details"><font color="#FFFFFFFF">Personal Details</font></string>
+    <string name="mobile_no"><font color="#FFFFFFFF">Mobile Number</font></string>
+    <string name="mobile_no_here"><font color="#FFFFFFFF">9876504321</font></string>
+    <string name="email_id"><font color="#FFFFFFFF">Email Id</font></string>
+    <string name="email_id_here"><font color="#FFFFFFFF">emailHere@gmail.com</font></string>
+    <string name="birthdate"><font color="#FFFFFFFF">Birthdate</font></string>
+    <string name="birthdate_here"><font color="#FFFFFFFF">dd/mm/yyyy</font></string>
+    <string name="content"><font color="#FFFFFFFF">Content</font></string>
+    <string name="favourites"><font color="#FFFFFFFF">Favourites</font></string>
+    <string name="library"><font color="#FFFFFFFF">Library</font></string>
+    <string name="actions"><font color="#FFFFFFFF">Actions</font></string>
 
     <!--    library_screen_fragment-->
 
