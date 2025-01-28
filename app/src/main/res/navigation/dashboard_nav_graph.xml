@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_homeScreenFragment_to_favouritesScreenFragment"
             app:destination="@id/favouritesScreenFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_albumScreenFragment"
+            app:destination="@id/albumScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileScreenFragment"
@@ -91,4 +94,9 @@
         android:name="com.example.sunnzaraa.ui.FavouritesScreenFragment"
         android:label="fragment_favourites_screen"
         tools:layout="@layout/fragment_favourites_screen" />
+    <fragment
+        android:id="@+id/albumScreenFragment"
+        android:name="com.example.sunnzaraa.ui.AlbumScreenFragment"
+        android:label="fragment_album_screen"
+        tools:layout="@layout/fragment_album_screen" />
 </navigation>

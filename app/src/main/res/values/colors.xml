@@ -8,5 +8,12 @@
     <color name="grey">#C1C1C1</color>
     <color name="green">#77DD00</color>
 
+    <color name="magenta">#FF1A6B</color>
+    <color name="orange">#FF8400</color>
+    <color name="purple">#FF00C7</color>
+    <color name="darkblue">#0048FF</color>
+    <color name="paleyellow">#A9CF00</color>
+    <color name="teal">#009688</color>
+
 
 </resources>
