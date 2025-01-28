@@ -94,4 +94,8 @@
     <string name="username"><font color="#FFFFFFFF">Username</font></string>
     <string name="password"><font color="#FFFFFFFF">Password</font></string>
 
+    <!--    take_a_photo_dialog_box-->
+    <string name="take_a_photo">Take a photo</string>
+<!--    <string name="take_a_photo"><font color="#FFFFFFFF">Take a photo</font></string>-->
+
 </resources>
