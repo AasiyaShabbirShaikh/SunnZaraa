@@ -3,15 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     tools:context=".ui.FavouritesScreenFragment">
 
     <TextView
+        android:id="@+id/liked_songs_textview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/favourites"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:text="@string/favourite_songs"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout="@layout/item_song_layout"
+        app:layout_constraintTop_toBottomOf="@+id/liked_songs_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

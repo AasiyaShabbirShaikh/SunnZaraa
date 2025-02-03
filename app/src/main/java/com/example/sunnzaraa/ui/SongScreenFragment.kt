@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.sunnzaraa.R
 
-class LibraryScreenFragment : Fragment() {
+class SongScreenFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_library_screen, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_song_screen, container, false)
     }
 
 }

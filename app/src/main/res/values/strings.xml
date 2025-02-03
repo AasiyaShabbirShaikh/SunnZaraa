@@ -16,7 +16,6 @@
     <string name="help_and_faq"><font color="#FFFFFFFF">Help and FAQ</font></string>
     <string name="log_out"><font color="#FFFFFFFF">Log Out</font></string>
 
-    <!--    home_screen_fragment-->
 
     <!--    profile_screen_fragment-->
     <string name="profile"><font color="#FFFFFFFF">Profile</font></string>
@@ -34,11 +33,6 @@
     <string name="library"><font color="#FFFFFFFF">Library</font></string>
     <string name="actions"><font color="#FFFFFFFF">Actions</font></string>
 
-    <!--    library_screen_fragment-->
-
-    <!--    search_screen_fragment-->
-
-    <!--    premium_screen_fragment-->
 
     <!--    terms_and_privacy_fragment-->
     <string name="terms_privacy_welcome_note"><font color="#FFFFFFFF">Welcome to SunnZaraa Music App ! By using our app, you agree to the following terms and conditions. Please read them carefully.</font></string>
@@ -73,6 +67,7 @@
     <string name="support_mail_note"><font color="#FFFFFFFF">For any questions or concerns, please contact us at <font color=""><u>sunnzaraa@gmail.com</u></font>.</font></string>
     <string name="thankyou_note"><font color="#FFFFFFFF">Thank you for choosing SunnZaraa!</font></string>
 
+
     <!--    help_and_faq_fragment-->
     <string name="what_is_sunnzaraa"><font color="#FFFFFFFF">What is SunnZaraa?</font></string>
     <string name="what_is_sunnzaraa_answer"><font color="#FFFFFFFF">SunnZaraa is a music app that allows you to stream, download, and enjoy your favorite tracks anytime, anywhere.</font></string>
@@ -89,15 +84,18 @@
     <string name="how_to_report_bug_query"><font color="#FFFFFFFF">How do I report a bug or provide feedback?</font></string>
     <string name="how_to_report_bug_query_answer"><font color="#FFFFFFFF">Please refer to the email provided in the Terms and Policy section and feel free to mail us. We’re here to assist you!</font></string>
 
+
     <!--    edit_profile_screen_fragment-->
     <string name="edit_profile"><font color="#FFFFFFFF">Edit Profile</font></string>
     <string name="change_profile_photo"><font color="#FFFFFFFF"><u>Change Profile Photo</u></font></string>
     <string name="username"><font color="#FFFFFFFF">Username</font></string>
     <string name="password"><font color="#FFFFFFFF">Password</font></string>
 
+
     <!--    take_a_photo_dialog_box-->
     <string name="take_a_photo">Take a photo</string>
     <string name="choose_image">Choose image</string>
+
 
     <!--    music_languages_screen_fragment-->
     <string name="choose_language"><font color="#FFFFFFFF">Choose Language</font></string>
@@ -108,9 +106,89 @@
     <string name="gujarati"><font color="#FFFFFFFF">Gujarati</font></string>
     <string name="south"><font color="#FFFFFFFF">South</font></string>
 
+
     <!--    album_screen_fragment-->
     <string name="album"><font color="#FFFFFFFF">Album</font></string>
     <string name="artist_name"><font color="#FFFFFFFF">Artist Name</font></string>
 
+
+    <!--    library_screen_fragment-->
+    <string name="your_library"><font color="#FFFFFFFF">Your Library</font></string>
+    <string name="liked_songs"><font color="#FFFFFFFF">Liked Songs</font></string>
+    <string name="no_of_songs"><font color="#FFFFFFFF">no_of_songs</font></string>
+
+
+    <!--    login_screen_fragment-->
+    <string name="welcome_to_sunnzaraa"><font color="#FFFFFFFF">Welcome to SunnZaraa !</font></string>
+    <string name="email_id_hint"><font color="#FFFFFFFF">email id here</font></string>
+    <string name="password_hint"><font color="#FFFFFFFF">*********</font></string>
+    <string name="remember_me"><font color="#FFFFFFFF"> Remember Me </font></string>
+    <string name="log_in"><font color="#FFFFFFFF">Log In</font></string>
+    <string name="dont_have_an_account"><font color="#FFFFFFFF">Don\'t have an account ?</font></string>
+    <string name="sign_up"><font color="#FFFFFFFF">Sign Up</font></string>
+    <string name="forgot_your_password"><font color="#FFFFFFFF">Forgot your password ?</font></string>
+
+
+    <!--    registration_screen_fragment-->
+    <string name="sign_up_text"><font color="#FFFFFFFF">Sign up to SunnZaraa</font></string>
+    <string name="next"><font color="#FFFFFFFF">Next</font></string>
+    <string name="already_have_an_account"><font color="#FFFFFFFF">Already have an account \?</font></string>
+    <string name="login_here"><font color="#FFFFFFFF">Log in here</font></string>
+
+
+    <!--    create_password_screen_fragment-->
+    <string name="create_password"><font color="#FFFFFFFF">Create a password</font></string>
+    <string name="password_contains"><font color="#FFFFFFFF">Your password must contain at least</font></string>
+    <string name="one_letter"><font color="#FFFFFFFF">1 letter</font></string>
+    <string name="num_special_char"><font color="#FFFFFFFF">1 number or special character(example: # ? ! @)</font></string>
+    <string name="eight_characters"><font color="#FFFFFFFF">8 characters</font></string>
+
+
+    <!--    personal_details_screen_fragment-->
+    <string name="tell_me_about_yourself"><font color="#FFFFFFFF">Tell me about yourself</font></string>
+    <string name="name"><font color="#FFFFFFFF">Name</font></string>
+    <string name="name_on_screen_note"><font color="#FFFFFFFF">This name will appear on your screen</font></string>
+    <string name="enter_name"><font color="#FFFFFFFF">enter name</font></string>
+    <string name="date_of_birth"><font color="#FFFFFFFF">Date of birth</font></string>
+    <string name="why_dob"><font color="#FFFFFFFF">Why do we need your date of birth ?</font></string>
+    <string name="enter_dob"><font color="#FFFFFFFF">enter dob</font></string>
+    <string name="gender"><font color="#FFFFFFFF">Gender</font></string>
+    <string name="male"><font color="#FFFFFFFF">Male</font></string>
+    <string name="female"><font color="#FFFFFFFF">Female</font></string>
+    <string name="others"><font color="#FFFFFFFF">Others</font></string>
+
+
+    <!--    terms_conditions_screen_fragment-->
+    <string name="terms_and_conditions"><font color="#FFFFFFFF">Terms &amp; Conditions</font></string>
+    <string name="term_one"><font color="#FFFFFFFF">Any unauthorized use of software is strictly prohibited.</font></string>
+    <string name="term_two"><font color="#FFFFFFFF">Musciana reserves the right to not provide the softwrae (including updates) to you at any time and to discontinue the baility to access the Musicana Service through  such software at any time, without prior or any notice.</font></string>
+    <string name="term_three"><font color="#FFFFFFFF">Musicana has no obligation to provide any specific content through the Musciana Service, and Musicana or the application owners may remove particular songs, videos, podcasts, and other Content without notice.</font></string>
+    <string name="by_clicking_signup"><font color="#FFFFFFFF">By clicking on sign-up, you agree to Musican\'s Terms and Conditions of Use.</font></string>
+
+
+    <!--    favourite_screen_fragment-->
+    <string name="favourite_songs"><font color="#FFFFFFFF">Favourite Songs</font></string>
+    <string name="songs_title"><font color="#FFFFFFFF">Songs title</font></string>
+    <string name="singer_composer_lyricist"><font color="#FFFFFFFF">Singer, Composer, lyricist</font></string>
+
+    <!--    songs_screen_fragment-->
+    <string name="singer"><font color="#FFFFFFFF">Singer</font></string>
+    <string name="start_time"><font color="#FFFFFFFF">0.00</font></string>
+    <string name="end_time"><font color="#FFFFFFFF">2.56</font></string>
+
+
+    <!--    search_screen_fragment-->
+    <string name="browse_all"><font color="#FFFFFFFF">Browse All</font></string>
+    <string name="music"><font color="#FFFFFFFF">Music</font></string>
+    <string name="new_releases"><font color="#FFFFFFFF">New Releases</font></string>
+    <string name="trending"><font color="#FFFFFFFF">Trending</font></string>
+    <string name="lyrics"><font color="#FFFFFFFF">Lyrics</font></string>
+    <string name="podcasts"><font color="#FFFFFFFF">Podcasts</font></string>
+    <string name="bollywood"><font color="#FFFFFFFF">Bollywood</font></string>
+    <string name="melody"><font color="#FFFFFFFF">Bollywood</font></string>
+    <string name="lofi"><font color="#FFFFFFFF">Lofi</font></string>
+
+    <!--    home_screen_fragment-->
+    <!--    premium_screen_fragment-->
 
 </resources>

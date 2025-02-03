@@ -1,4 +1,4 @@
-package com.example.sunnzaraa.ui
+package com.example.sunnzaraa.ui.profile
 
 import android.app.Dialog
 import android.os.Bundle
@@ -6,10 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentEditProfileScreenBinding
-import com.example.sunnzaraa.databinding.FragmentHelpFaqScreenBinding
-import com.example.sunnzaraa.databinding.FragmentProfileScreenBinding
 import com.example.sunnzaraa.databinding.TakeAPhotoDialogBoxBinding
 
 class EditProfileScreenFragment : Fragment() {

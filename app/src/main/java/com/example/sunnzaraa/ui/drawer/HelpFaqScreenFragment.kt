@@ -1,4 +1,4 @@
-package com.example.sunnzaraa.ui
+package com.example.sunnzaraa.ui.drawer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.view.isVisible
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentHelpFaqScreenBinding
