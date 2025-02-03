@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,4 +7,939 @@
     tools:context=".ui.bottomBar.HomeScreenFragment"
     android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/music_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/dark_grey"
+                    android:gravity="center"
+                    />
+
+
+                <View
+                    android:id="@+id/music_tab_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/blogs_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blogs"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/dark_grey"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:id="@+id/blogs_tab_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/favourite_song_cardview"
+                        android:layout_width="185dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/dark_grey"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="14dp"
+                                android:paddingTop="14dp"
+                                android:paddingRight="14dp"
+                                android:paddingBottom="14dp"
+                                app:srcCompat="@drawable/ic_favourites_icon" />
+
+                            <TextView
+                                android:id="@+id/liked_songs_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="12dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/favourite_songs"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview2"
+                        android:layout_width="185dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/dark_grey"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/bollywood_dance_music_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/melody"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:layout_width="185dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/dark_grey"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/emraan_hashmi_hits_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/singer"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardview4"
+                        android:layout_width="185dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/dark_grey"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <TextView
+                                android:id="@+id/sufi_and_bollywood_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/bollywood"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:id="@+id/bestofartiststext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:text="@string/best_of_artists"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="@string/this_is"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/arijit_singh_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="@string/singer_nocolor"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text1" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/arijit_singh" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview2"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="@string/this_is"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/rahat_fateh_ali_khan_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="@string/singer"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text2" />
+
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/imageView9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/rahat_fateh_ali_khan" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview3"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="THIS IS"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/Yo_Yo_Honey_Singh_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="Yo Yo Honey Singh"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text3" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/artistimage3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/arijit_singh" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview4"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="THIS IS"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/Atif_Aslam_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="Atif Aslam"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text4" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/artistimage4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/rahat_fateh_ali_khan" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview5"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="THIS IS"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/jubin_nautiyal_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="Jubin Nautiyal"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text5" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/artistimage5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/arijit_singh" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artistcardview6"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            app:cardElevation="7dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:background="@color/white"
+                                    android:elevation="5dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/this_is_text6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_horizontal|center_vertical"
+                                            android:layout_marginTop="21dp"
+                                            android:letterSpacing="0.2"
+                                            android:text="THIS IS"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="8sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <TextView
+                                            android:id="@+id/pritam_text"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="2dp"
+                                            android:gravity="center_horizontal|center_vertical"
+                                            android:text="Pritam"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/this_is_text6" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/artistimage6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    app:srcCompat="@drawable/rahat_fateh_ali_khan" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <TextView
+                android:id="@+id/newreleasestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/new_releases"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintnewreleaselayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintnewreleaselayout">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview1"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/rockstar_album" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview2"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/armaan_malik_album" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview3"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/rockstar_album" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview4"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/armaan_malik_album" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview5"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/rockstar_album" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newreleasecardview6"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardElevation="7dp">
+
+                            <ImageView
+                                android:id="@+id/newreleaseimage6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/armaan_malik_album"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

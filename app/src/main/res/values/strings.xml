@@ -116,6 +116,9 @@
     <string name="your_library"><font color="#FFFFFFFF">Your Library</font></string>
     <string name="liked_songs"><font color="#FFFFFFFF">Liked Songs</font></string>
     <string name="no_of_songs"><font color="#FFFFFFFF">no_of_songs</font></string>
+    <string name="playlist"><font color="#FFFFFFFF">Playlist</font></string>
+    <string name="create_playlist"><font color="#FFFFFFFF">Create Playlist</font></string>
+    <string name="add_artist"><font color="#FFFFFFFF">Add Artist</font></string>
 
 
     <!--    login_screen_fragment-->
@@ -139,7 +142,7 @@
     <!--    create_password_screen_fragment-->
     <string name="create_password"><font color="#FFFFFFFF">Create a password</font></string>
     <string name="password_contains"><font color="#FFFFFFFF">Your password must contain at least</font></string>
-    <string name="one_letter"><font color="#FFFFFFFF">1 letter</font></string>
+    <string name="one_letter"><font color="#FFccFFFFFF">1 letter</font></string>
     <string name="num_special_char"><font color="#FFFFFFFF">1 number or special character(example: # ? ! @)</font></string>
     <string name="eight_characters"><font color="#FFFFFFFF">8 characters</font></string>
 
@@ -185,10 +188,15 @@
     <string name="lyrics"><font color="#FFFFFFFF">Lyrics</font></string>
     <string name="podcasts"><font color="#FFFFFFFF">Podcasts</font></string>
     <string name="bollywood"><font color="#FFFFFFFF">Bollywood</font></string>
-    <string name="melody"><font color="#FFFFFFFF">Bollywood</font></string>
+    <string name="melody"><font color="#FFFFFFFF">Melody</font></string>
     <string name="lofi"><font color="#FFFFFFFF">Lofi</font></string>
 
     <!--    home_screen_fragment-->
+    <string name="blogs"><font color="#FFFFFFFF">Blogs</font></string>
+    <string name="best_of_artists"><font color="#FFFFFFFF">Best Of Artists</font></string>
+    <string name="this_is">THIS IS</string>
+    <string name="singer_nocolor">Singer</string>
+
     <!--    premium_screen_fragment-->
 
 </resources>
