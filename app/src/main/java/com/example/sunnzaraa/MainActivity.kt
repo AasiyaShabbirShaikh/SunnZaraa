@@ -1,10 +1,13 @@
 package com.example.sunnzaraa
 
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.GravityInt
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.NavHost
@@ -18,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var actionBarDrawerToggle : ActionBarDrawerToggle
 
+    private val isLoggedIn = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding =ActivityMainBinding.inflate(layoutInflater)
@@ -25,6 +30,16 @@ class MainActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
         navController = navHostFragment.navController
+
+        val navGraph = if(isLoggedIn){
+            navController.navInflater.inflate(R.navigation.authentication_nav_graph)
+        }
+        else{
+            navController.navInflater.inflate(R.navigation.dashboard_nav_graph)
+        }
+        navController.graph = navGraph
+
+        setUpToolBarBottomBarVisibility()
 
         binding.homeToolbar.iconDrawerMenu.setOnClickListener {
             binding.mainDrawer.openDrawer(GravityCompat.START)
@@ -34,31 +49,49 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.profileScreenFragment)
         }
 
+        resetBottomBarIconsColor()
+        binding.homeBottomBar.iconHome.setColorFilter(ContextCompat.getColor(binding.homeBottomBar.iconHome.context, R.color.white), PorterDuff.Mode.SRC_IN)
+
         setUpDrawerLayoutMenu()
         setUpHomeBottomBar()
-        setUpToolBarBottomBarVisibility()
     }
 
     private fun setUpHomeBottomBar(){
         binding.homeBottomBar.apply {
+
             iconHome.setOnClickListener {
+                resetBottomBarIconsColor()
                 navController.navigate(R.id.homeScreenFragment)
+                iconHome.setColorFilter(ContextCompat.getColor(iconHome.context, R.color.white), PorterDuff.Mode.SRC_IN)
             }
 
             iconLibrary.setOnClickListener {
+                resetBottomBarIconsColor()
                 navController.navigate(R.id.libraryScreenFragment)
+                iconLibrary.setColorFilter(ContextCompat.getColor(iconLibrary.context, R.color.white), PorterDuff.Mode.SRC_IN)
             }
 
             iconSearch.setOnClickListener {
+                resetBottomBarIconsColor()
                 navController.navigate(R.id.searchScreenFragment)
+                iconSearch.setColorFilter(ContextCompat.getColor(iconSearch.context, R.color.white), PorterDuff.Mode.SRC_IN)
             }
 
             iconPremium.setOnClickListener {
+                resetBottomBarIconsColor()
                 navController.navigate(R.id.premiumScreenFragment)
+                iconPremium.setColorFilter(ContextCompat.getColor(iconPremium.context, R.color.white), PorterDuff.Mode.SRC_IN)
             }
         }
     }
 
+    private fun resetBottomBarIconsColor(){
+        val defaultColor = ContextCompat.getColor(this, R.color.charcoal)
+        binding.homeBottomBar.iconHome.setColorFilter(defaultColor, PorterDuff.Mode.SRC_IN)
+        binding.homeBottomBar.iconLibrary.setColorFilter(defaultColor, PorterDuff.Mode.SRC_IN)
+        binding.homeBottomBar.iconSearch.setColorFilter(defaultColor, PorterDuff.Mode.SRC_IN)
+        binding.homeBottomBar.iconPremium.setColorFilter(defaultColor, PorterDuff.Mode.SRC_IN)
+    }
 
     private fun setUpDrawerLayoutMenu(){
         actionBarDrawerToggle = ActionBarDrawerToggle(this, binding.mainDrawer, R.string.start, R.string.close)
@@ -94,7 +127,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpToolBarBottomBarVisibility(){
         navController.addOnDestinationChangedListener{ _,destination, _ ->
-            if(destination.id == R.id.termsPrivacyScreenFragment){
+            if(destination.id == R.id.loginScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if(destination.id == R.id.registrationScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if(destination.id == R.id.createPasswordScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if(destination.id == R.id.personalDetailsScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if(destination.id == R.id.termsConditionsScreenFragment){
+                hideMainToolbar()
+                hideMainBottomBar()
+            }
+            else if(destination.id == R.id.termsPrivacyScreenFragment){
                 hideMainToolbar()
                 hideMainBottomBar()
             }
@@ -110,12 +163,17 @@ class MainActivity : AppCompatActivity() {
                 hideMainToolbar()
                 hideMainBottomBar()
             }
+            else if(destination.id == R.id.homeScreenFragment){
+                binding.root.postDelayed({
+                    showMainToolbar()
+                    showMainBottomBar()
+                }, 50)
+            }
             else{
-                showMainBottomBar()
                 showMainToolbar()
+                showMainBottomBar()
             }
         }
-
     }
 
     private fun hideMainBottomBar(){

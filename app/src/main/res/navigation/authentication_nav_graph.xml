@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_nav_graph"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.sunnzaraa.ui.login.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreenFragment_to_registrationScreenFragment"
+            app:destination="@id/registrationScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_createPasswordScreenFragment"
+            app:destination="@id/createPasswordScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_personalDetailsScreenFragment"
+            app:destination="@id/personalDetailsScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_termsConditionsScreenFragment"
+            app:destination="@id/termsConditionsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationScreenFragment"
+        android:name="com.example.sunnzaraa.ui.registration.RegistrationScreenFragment"
+        android:label="fragment_registration_screen"
+        tools:layout="@layout/fragment_registration_screen" >
+        <action
+            android:id="@+id/action_registrationScreenFragment_to_createPasswordScreenFragment"
+            app:destination="@id/createPasswordScreenFragment" />
+        <action
+            android:id="@+id/action_registrationScreenFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPasswordScreenFragment"
+        android:name="com.example.sunnzaraa.ui.registration.CreatePasswordScreenFragment"
+        android:label="fragment_create_password_screen"
+        tools:layout="@layout/fragment_create_password_screen" >
+        <action
+            android:id="@+id/action_createPasswordScreenFragment_to_personalDetailsScreenFragment"
+            app:destination="@id/personalDetailsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDetailsScreenFragment"
+        android:name="com.example.sunnzaraa.ui.registration.PersonalDetailsScreenFragment"
+        android:label="fragment_personal_details_screen"
+        tools:layout="@layout/fragment_personal_details_screen" >
+        <action
+            android:id="@+id/action_personalDetailsScreenFragment_to_termsConditionsScreenFragment"
+            app:destination="@id/termsConditionsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsConditionsScreenFragment"
+        android:name="com.example.sunnzaraa.ui.registration.TermsConditionsScreenFragment"
+        android:label="fragment_terms_conditions_screen"
+        tools:layout="@layout/fragment_terms_conditions_screen" />
+</navigation>

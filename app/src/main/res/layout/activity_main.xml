@@ -43,9 +43,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/bottom_bar_layout"
             android:name="androidx.navigation.fragment.NavHostFragment"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/dashboard_nav_graph"
-            />
+            app:defaultNavHost="true"/>
+<!--            app:navGraph="@navigation/dashboard_nav_graph"-->
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/bottom_bar_layout"

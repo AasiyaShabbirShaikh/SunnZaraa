@@ -123,38 +123,38 @@
 
     <!--    login_screen_fragment-->
     <string name="welcome_to_sunnzaraa"><font color="#FFFFFFFF">Welcome to SunnZaraa !</font></string>
-    <string name="email_id_hint"><font color="#FFFFFFFF">email id here</font></string>
-    <string name="password_hint"><font color="#FFFFFFFF">*********</font></string>
+    <string name="email_id_hint">email id here</string>
+    <string name="password_hint">*****</string>
     <string name="remember_me"><font color="#FFFFFFFF"> Remember Me </font></string>
     <string name="log_in"><font color="#FFFFFFFF">Log In</font></string>
     <string name="dont_have_an_account"><font color="#FFFFFFFF">Don\'t have an account ?</font></string>
-    <string name="sign_up"><font color="#FFFFFFFF">Sign Up</font></string>
-    <string name="forgot_your_password"><font color="#FFFFFFFF">Forgot your password ?</font></string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="forgot_your_password"><u>Forgot your password ?</u></string>
 
 
     <!--    registration_screen_fragment-->
     <string name="sign_up_text"><font color="#FFFFFFFF">Sign up to SunnZaraa</font></string>
     <string name="next"><font color="#FFFFFFFF">Next</font></string>
     <string name="already_have_an_account"><font color="#FFFFFFFF">Already have an account \?</font></string>
-    <string name="login_here"><font color="#FFFFFFFF">Log in here</font></string>
+    <string name="login_here"><u>Log in here</u></string>
 
 
     <!--    create_password_screen_fragment-->
     <string name="create_password"><font color="#FFFFFFFF">Create a password</font></string>
-    <string name="password_contains"><font color="#FFFFFFFF">Your password must contain at least</font></string>
-    <string name="one_letter"><font color="#FFccFFFFFF">1 letter</font></string>
-    <string name="num_special_char"><font color="#FFFFFFFF">1 number or special character(example: # ? ! @)</font></string>
+    <string name="password_contains"><font color="#FFFFFFFF">Your password must contain at least :</font></string>
+    <string name="one_letter"><font color="#FFFFFFFF">1 letter</font></string>
+    <string name="num_special_char"><font color="#FFFFFFFF">1 number or special character \n(example: # ? ! @)</font></string>
     <string name="eight_characters"><font color="#FFFFFFFF">8 characters</font></string>
 
 
     <!--    personal_details_screen_fragment-->
     <string name="tell_me_about_yourself"><font color="#FFFFFFFF">Tell me about yourself</font></string>
     <string name="name"><font color="#FFFFFFFF">Name</font></string>
-    <string name="name_on_screen_note"><font color="#FFFFFFFF">This name will appear on your screen</font></string>
-    <string name="enter_name"><font color="#FFFFFFFF">enter name</font></string>
+    <string name="name_on_screen_note"><font color="#FF8400">This name will appear on your screen</font></string>
+    <string name="enter_name">enter name</string>
     <string name="date_of_birth"><font color="#FFFFFFFF">Date of birth</font></string>
     <string name="why_dob"><font color="#FFFFFFFF">Why do we need your date of birth ?</font></string>
-    <string name="enter_dob"><font color="#FFFFFFFF">enter dob</font></string>
+    <string name="enter_dob">enter dob</string>
     <string name="gender"><font color="#FFFFFFFF">Gender</font></string>
     <string name="male"><font color="#FFFFFFFF">Male</font></string>
     <string name="female"><font color="#FFFFFFFF">Female</font></string>
@@ -164,9 +164,11 @@
     <!--    terms_conditions_screen_fragment-->
     <string name="terms_and_conditions"><font color="#FFFFFFFF">Terms &amp; Conditions</font></string>
     <string name="term_one"><font color="#FFFFFFFF">Any unauthorized use of software is strictly prohibited.</font></string>
-    <string name="term_two"><font color="#FFFFFFFF">Musciana reserves the right to not provide the softwrae (including updates) to you at any time and to discontinue the baility to access the Musicana Service through  such software at any time, without prior or any notice.</font></string>
-    <string name="term_three"><font color="#FFFFFFFF">Musicana has no obligation to provide any specific content through the Musciana Service, and Musicana or the application owners may remove particular songs, videos, podcasts, and other Content without notice.</font></string>
+    <string name="term_two"><font color="#FFFFFFFF">SunnZaraa reserves the right to not provide the softwrae (including updates) to you at any time and to discontinue the ability to access the SunnZaraa App Service through  such software at any time, without prior or any notice.</font></string>
+    <string name="term_three"><font color="#FFFFFFFF">SunnZaraa has no obligation to provide any specific content through the SunnZaraa Service, and app or the application owners may remove particular songs, videos, podcasts, and other Content without notice.</font></string>
     <string name="by_clicking_signup"><font color="#FFFFFFFF">By clicking on sign-up, you agree to Musican\'s Terms and Conditions of Use.</font></string>
+    <string name="accept_text"><font color="#FFFFFFFF">By checking this box, I confirm that I have read and agree to the Terms and Conditions of this app.</font></string>
+    <string name="accept_toast_text"><font color="#FFFFFFFF">Accept the Terms and Conditions to continue.</font></string>
 
 
     <!--    favourite_screen_fragment-->
@@ -196,6 +198,8 @@
     <string name="best_of_artists"><font color="#FFFFFFFF">Best Of Artists</font></string>
     <string name="this_is">THIS IS</string>
     <string name="singer_nocolor">Singer</string>
+    <string name="artists"><font color="#FFFFFFFF">Artists</font></string>
+    <string name="recently_played"><font color="#FFFFFFFF">Recently Played</font></string>
 
     <!--    premium_screen_fragment-->
 

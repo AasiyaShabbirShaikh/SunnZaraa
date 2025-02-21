@@ -26,25 +26,25 @@ class HelpFaqScreenFragment : Fragment() {
     }
 
     private fun setArrowClick(){
-        binding.que1Arrow.setOnClickListener {
+        binding.question1Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans1Text, binding.que1Arrow)
         }
-        binding.que2Arrow.setOnClickListener {
+        binding.question2Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans2Text, binding.que2Arrow)
         }
-        binding.que3Arrow.setOnClickListener {
+        binding.question3Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans3Text, binding.que3Arrow)
         }
-        binding.que4Arrow.setOnClickListener {
+        binding.question4Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans4Text, binding.que4Arrow)
         }
-        binding.que5Arrow.setOnClickListener {
+        binding.question5Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans5Text, binding.que5Arrow)
         }
-        binding.que6Arrow.setOnClickListener {
+        binding.question6Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans6Text, binding.que6Arrow)
         }
-        binding.que7Arrow.setOnClickListener {
+        binding.question7Layout.setOnClickListener {
             setUpArrowAnswerTextUI(binding.ans7Text, binding.que7Arrow)
         }
     }
