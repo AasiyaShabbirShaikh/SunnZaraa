@@ -32,9 +32,7 @@ class LoginScreenFragment : Fragment() {
             val password = binding.passwordEdittext.text.toString()
 
             if(email == "aasiya" && password == "shaikh"){
-                val navController = requireActivity().findNavController(R.id.container)
-                val navGraph = navController.navInflater.inflate(R.navigation.dashboard_nav_graph)
-                navController.graph = navGraph
+                findNavController().navigate(LoginScreenFragmentDirections.actionLoginScreenFragmmentToHomeGraph())
             }
             else{
                 Toast.makeText(requireContext(), "Invalid credentials, Please try again !", Toast.LENGTH_SHORT).show()
@@ -45,12 +43,9 @@ class LoginScreenFragment : Fragment() {
     }
 
     private fun handleOnClickEvents(){
-//        binding.loginButton.setOnClickListener {
-//
-//        }
 
         binding.forgotPasswordText.setOnClickListener {
-            findNavController().navigate(LoginScreenFragmentDirections.actionLoginScreenFragmentToCreatePasswordScreenFragment())
+
         }
 
         binding.signupText.setOnClickListener {

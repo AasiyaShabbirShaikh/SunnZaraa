@@ -17,11 +17,11 @@ import com.example.sunnzaraa.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//
+
     private lateinit var navController: NavController
     private lateinit var actionBarDrawerToggle : ActionBarDrawerToggle
 
-    private val isLoggedIn = true
+    private val isLoggedIn = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,13 +31,14 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment
         navController = navHostFragment.navController
 
-        val navGraph = if(isLoggedIn){
-            navController.navInflater.inflate(R.navigation.authentication_nav_graph)
-        }
-        else{
-            navController.navInflater.inflate(R.navigation.dashboard_nav_graph)
-        }
+        val navGraph = navController.navInflater.inflate(R.navigation.dashboard_nav_graph)
         navController.graph = navGraph
+
+        if (isLoggedIn) {
+            navController.navigate(R.id.homeGraph)
+        } else {
+            navController.navigate(R.id.loginGraph)
+        }
 
         setUpToolBarBottomBarVisibility()
 
