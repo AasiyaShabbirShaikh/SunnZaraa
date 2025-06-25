@@ -31,7 +31,7 @@ class LoginScreenFragment : Fragment() {
             val email = binding.emailEdittext.text.toString()
             val password = binding.passwordEdittext.text.toString()
 
-            if(email == "aasiya" && password == "shaikh"){
+            if(email == "a" && password == "s"){
                 findNavController().navigate(LoginScreenFragmentDirections.actionLoginScreenFragmmentToHomeGraph())
             }
             else{

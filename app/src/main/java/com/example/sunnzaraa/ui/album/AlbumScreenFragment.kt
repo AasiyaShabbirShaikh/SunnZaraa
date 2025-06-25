@@ -1,4 +1,4 @@
-package com.example.sunnzaraa.ui
+package com.example.sunnzaraa.ui.album
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.sunnzaraa.R
 
-class SongScreenFragment : Fragment() {
+class AlbumScreenFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_song_screen, container, false)
+        return inflater.inflate(R.layout.fragment_album_screen, container, false)
     }
 
 }

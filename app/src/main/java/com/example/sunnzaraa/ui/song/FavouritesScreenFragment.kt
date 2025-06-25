@@ -1,4 +1,4 @@
-package com.example.sunnzaraa.ui
+package com.example.sunnzaraa.ui.song
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
