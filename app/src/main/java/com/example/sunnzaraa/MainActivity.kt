@@ -14,7 +14,9 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHost
 import androidx.navigation.fragment.NavHostFragment
 import com.example.sunnzaraa.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -150,22 +152,22 @@ class MainActivity : AppCompatActivity() {
                 hideMainToolbar()
                 hideMainBottomBar()
             }
-            else if(destination.id == R.id.termsPrivacyScreenFragment){
-                hideMainToolbar()
-                hideMainBottomBar()
-            }
-            else if (destination.id == R.id.helpFaqScreenFragment){
-                hideMainToolbar()
-                hideMainBottomBar()
-            }
-            else if (destination.id == R.id.profileScreenFragment){
-                hideMainToolbar()
-                hideMainBottomBar()
-            }
-            else if (destination.id == R.id.editProfileScreenFragment){
-                hideMainToolbar()
-                hideMainBottomBar()
-            }
+//            else if(destination.id == R.id.termsPrivacyScreenFragment){
+//                hideMainToolbar()
+//                hideMainBottomBar()
+//            }
+//            else if (destination.id == R.id.helpFaqScreenFragment){
+//                hideMainToolbar()
+//                hideMainBottomBar()
+//            }
+//            else if (destination.id == R.id.profileScreenFragment){
+//                hideMainToolbar()
+//                hideMainBottomBar()
+//            }
+//            else if (destination.id == R.id.editProfileScreenFragment){
+//                hideMainToolbar()
+//                hideMainBottomBar()
+//            }
             else if(destination.id == R.id.homeScreenFragment){
                 binding.root.postDelayed({
                     showMainToolbar()

@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.sunnzaraa.databinding.FragmentPremiumScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PremiumScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentPremiumScreenBinding

@@ -36,23 +36,44 @@
                 android:textStyle="bold"
                 />
 
+<!--            <Button-->
+<!--                android:id="@+id/blogs_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/dark_grey"-->
+<!--                android:text="Blogs"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
             <Button
-                android:id="@+id/blogs_button"
+                android:id="@+id/favourites_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/dark_grey"
-                android:text="Blogs"
+                android:text="@string/favourites"
                 android:textSize="12sp"
                 android:layout_marginRight="8dp"
                 android:textStyle="bold"
                 />
 
+<!--            <Button-->
+<!--                android:id="@+id/lyrics_button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/dark_grey"-->
+<!--                android:text="@string/lyrics"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginRight="8dp"-->
+<!--                />-->
+
             <Button
-                android:id="@+id/lyrics_button"
+                android:id="@+id/podcast_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/dark_grey"
-                android:text="@string/lyrics"
+                android:text="@string/podcasts"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:layout_marginRight="8dp"
@@ -144,12 +165,8 @@
                                     <ImageView
                                         android:id="@+id/imageView4"
                                         android:layout_width="50dp"
-                                        android:layout_height="match_parent"
-                                        android:paddingLeft="14dp"
-                                        android:paddingTop="14dp"
-                                        android:paddingRight="14dp"
-                                        android:paddingBottom="14dp"
-                                        app:srcCompat="@drawable/ic_favourites_icon" />
+                                        android:layout_height="wrap_content"
+                                        tools:srcCompat="@tools:sample/avatars" />
 
                                     <TextView
                                         android:id="@+id/liked_songs_text"

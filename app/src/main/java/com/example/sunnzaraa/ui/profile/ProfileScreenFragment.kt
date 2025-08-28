@@ -10,7 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentProfileScreenBinding
 import com.example.sunnzaraa.databinding.TakeAPhotoDialogBoxBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfileScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileScreenBinding

@@ -3,26 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
-    tools:context=".ui.favourites.FavouritesScreenFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.podcast.PodcastScreenFragment">
 
     <TextView
-        android:id="@+id/favourites_textview"
+        android:id="@+id/podcast_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:paddingLeft="16dp"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
-        android:text="@string/favourite_songs"
+        android:text="@string/podcasts"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -30,7 +29,7 @@
         android:layout_marginTop="16dp"
         tools:itemCount="3"
         android:layout="@layout/item_song_layout"
-        app:layout_constraintTop_toBottomOf="@+id/favourites_textview"
+        app:layout_constraintTop_toBottomOf="@+id/podcast_txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />

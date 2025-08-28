@@ -96,6 +96,17 @@
                 android:id="@+id/action_homeScreenFragment_to_profileScreenFragment"
                 app:destination="@+id/profileScreenFragment"
                 />
+
+            <action
+                android:id="@+id/action_homeScreenFragment_to_favouritesScreenFragment"
+                app:destination="@+id/favouritesScreenFragment"
+                />
+
+            <action
+                android:id="@+id/action_homeScreenFragment_to_podcastScreenFragment"
+                app:destination="@+id/podcastScreenFragment"
+                />
+
         </fragment>
 
         <fragment
@@ -179,7 +190,7 @@
 
         <fragment
             android:id="@+id/favouritesScreenFragment"
-            android:name="com.example.sunnzaraa.ui.song.FavouritesScreenFragment"
+            android:name="com.example.sunnzaraa.ui.favourites.FavouritesScreenFragment"
             android:label="fragment_favourites_screen"
             tools:layout="@layout/fragment_favourites_screen">
         </fragment>
@@ -189,6 +200,13 @@
             android:name="com.example.sunnzaraa.ui.album.AlbumScreenFragment"
             android:label="fragment_album_screen"
             tools:layout="@layout/fragment_album_screen">
+        </fragment>
+
+        <fragment
+            android:id="@+id/podcastScreenFragment"
+            android:name="com.example.sunnzaraa.ui.podcast.PodcastScreenFragment"
+            android:label="fragment_podcast_screen"
+            tools:layout="@layout/fragment_podcast_screen">
         </fragment>
 
 

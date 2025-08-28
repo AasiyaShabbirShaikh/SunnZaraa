@@ -1,20 +1,23 @@
 package com.example.sunnzaraa.ui.login
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentLoginScreenBinding
+import com.example.sunnzaraa.ui.registration.viewModel.AuthViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginScreenFragment : Fragment() {
 
     private lateinit var binding : FragmentLoginScreenBinding
+    private val authViewModel by activityViewModels<AuthViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,23 +29,23 @@ class LoginScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.loginButton.setOnClickListener {
-            val email = binding.emailEdittext.text.toString()
-            val password = binding.passwordEdittext.text.toString()
-
-            if(email == "a" && password == "s"){
-                findNavController().navigate(LoginScreenFragmentDirections.actionLoginScreenFragmmentToHomeGraph())
-            }
-            else{
-                Toast.makeText(requireContext(), "Invalid credentials, Please try again !", Toast.LENGTH_SHORT).show()
-            }
-        }
-
         handleOnClickEvents()
     }
 
     private fun handleOnClickEvents(){
+        binding.loginButton.setOnClickListener {
+            val email = binding.emailEdittext.text.toString().trim()
+            val password = binding.passwordEdittext.text.toString().trim()
+
+            if(email.isEmpty() || password.isEmpty()){
+                Toast.makeText(requireContext(), "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            authViewModel.login(email, password)
+        }
+
+        observeLoginresult()
 
         binding.forgotPasswordText.setOnClickListener {
 
@@ -68,5 +71,21 @@ class LoginScreenFragment : Fragment() {
             }
         }
 
+        binding.rememberMeSwitch.setOnClickListener {
+
+        }
+
+    }
+
+    private fun observeLoginresult(){
+        authViewModel.loginResult.observe(viewLifecycleOwner){result ->
+            result.onSuccess{
+                findNavController().navigate(LoginScreenFragmentDirections.actionLoginScreenFragmmentToHomeGraph())
+            }
+
+            result.onFailure {
+                Toast.makeText(requireContext(), "Invalid Credentials!", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

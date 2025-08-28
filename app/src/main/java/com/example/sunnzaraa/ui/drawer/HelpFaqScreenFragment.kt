@@ -10,7 +10,9 @@ import android.widget.TextView
 import androidx.core.view.isVisible
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentHelpFaqScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HelpFaqScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentHelpFaqScreenBinding

@@ -8,7 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.sunnzaraa.databinding.FragmentEditProfileScreenBinding
 import com.example.sunnzaraa.databinding.TakeAPhotoDialogBoxBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class EditProfileScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentEditProfileScreenBinding

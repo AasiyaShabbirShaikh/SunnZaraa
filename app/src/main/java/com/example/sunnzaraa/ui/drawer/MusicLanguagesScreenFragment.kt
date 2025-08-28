@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.sunnzaraa.R
 import com.example.sunnzaraa.databinding.FragmentMusicLanguagesScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MusicLanguagesScreenFragment : Fragment() {
 
     private lateinit var binding: FragmentMusicLanguagesScreenBinding
